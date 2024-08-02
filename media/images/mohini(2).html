@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/6th%20project.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      body {
+        background-image: url("media/images/6p(1).jpg");
+        background-size: cover;
+      }
+    </style>
+  <style type="text/css" id="operaUserStyle"></style></head>
+  <body>
+    <h1 align="center">Job Application Form</h1>
+    <hr color="black" width="700px">
+    <form align="center">
+      <table width="730px" cellspacing="20px" align="center">
+        <tbody><tr align="left">
+          <th>Full Form</th>
+          <th><input type="text" placeholder="Enter the text" size="50"></th>
+        </tr>
+        <tr align="left">
+          <th>Job Title</th>
+          <th><input name="text" placeholder="Enter the text" size="50"></th>
+        </tr>
+        <tr align="left">
+          <th>Current Company</th>
+          <th><input name="text" placeholder="Enter the text" size="50"></th>
+        </tr>
+        <tr align="left">
+          <th>Contact Number</th>
+          <th><input name="text" placeholder="Enter the text" size="50"></th>
+        </tr>
+        <tr align="left">
+          <th>Email</th>
+          <th><input name="text" placeholder="Enter the text" size="50"></th>
+        </tr>
+        <tr align="left">
+          <th>Work Status</th>
+          <th>
+            <input type="radio" name="status" value="Full Time"><b>FullTime</b>
+            <input type="radio" name="status" value="Part Time"><b>FullTime</b>
+            <input type="radio" name="status" value="Per Diem"><b>FullTime</b>
+            <input type="radio" name="status" value="Others"><b>FullTime</b>
+          </th>
+        </tr>
+        <tr align="left">
+          <th>Salary</th>
+          <th>
+            <input type="text" placeholder="Salary" size="30">
+            <select name="rupees" selected="">
+              <option value="Rupess" selected="">Rupees</option>
+              <option value="paise">5000</option>
+              <option value="money">3000</option>
+            </select>
+            <select name="Yearly">
+              <option value="year">Yearly</option>
+              <option value="year">2025</option>
+              <option value="year">2026</option>
+            </select>
+          </th>
+        </tr>
+        <tr align="left">
+          <th>Experience</th>
+          <th>
+            <input tyep="text" placeholder="Enter your Experience in months" size="50">
+          </th>
+        </tr>
+        <tr align="left">
+          <th>Current Location</th>
+          <th>
+            <input tyep="text" placeholder="Enter your Current Location" size="50">
+          </th>
+        </tr>
+        <tr align="left">
+          <th>Permanent Address</th>
+          <th>
+            <textarea type="text" placeholder="Enter Permanent Address" cols="50"></textarea>
+          </th>
+        </tr>
+        <tr align="left">
+          <th>Upload resume</th>
+          <th><input type="file" name="uploaded_file"></th>
+        </tr>
+        <tr align="center">
+          <th><input type="submit" color="white"></th>
+          <th><input type="reset"></th>
+        </tr>
+      </tbody></table>
+    </form>
+    <hr width="700px" color="black">
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
